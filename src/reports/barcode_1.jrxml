@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="barcode" columnDirection="RTL" pageWidth="113" pageHeight="56" columnWidth="107" leftMargin="3" rightMargin="3" topMargin="3" bottomMargin="3" uuid="7ea881ec-5ded-497a-bd44-f29ef7c895dc">
+	<property name="ireport.zoom" value="5.559917313492239"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<parameter name="modelColor" class="java.lang.String"/>
+	<parameter name="modelSize" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="barcodeNum" class="java.lang.String"/>
+	<field name="modelName" class="java.lang.String"/>
+	<field name="price" class="java.lang.String"/>
+	<field name="storeName" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="46" splitType="Stretch">
+			<componentElement>
+				<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="20" width="103" height="26" uuid="c17eb866-44f8-43e0-8241-4161cc0d91ca">
+					<property name="com.jaspersoft.studio.unit.barHeight" value="px"/>
+					<property name="com.jaspersoft.studio.unit.barWidth" value="px"/>
+				</reportElement>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA[$F{barcodeNum}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="0" y="10" width="113" height="10" uuid="ca90c388-5502-45fe-b413-4039f85b3c68">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{modelName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="50" height="10" uuid="1e06e9c5-fe77-4bf3-939b-9582100a28d0"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{storeName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="50" y="0" width="63" height="10" uuid="f58450b4-ec11-4b01-8ed2-fff83155b752"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="36" width="60" height="10" uuid="5ba7720c-6363-4131-bc86-9958727621b4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{modelColor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="36" width="53" height="10" uuid="7af0fe01-9c13-489a-ace2-560012267cc2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{modelSize}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
