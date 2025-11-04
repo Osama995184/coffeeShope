@@ -1,0 +1,171 @@
+.nav-form{
+    -fx-background-color: linear-gradient(to bottom, #eee5e6, #29190e);
+}
+.header{
+    -fx-background-color: linear-gradient(to bottom right, #eee5e6, #29190e);
+    -fx-border-color: #fff;
+    -fx-border-width: 0 0 0.8px 0;
+}
+
+.nav_btn {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-border-width: 1px;
+    -fx-border-color: #fff;
+}
+
+.nav_btn:hover {
+    -fx-background-color: #fff;
+    -fx-text-fill: #000;
+}
+
+.nav_btn:hover .logo_icon {
+    -fx-fill: #29190e;
+}
+
+.logout-btn{
+    -fx-background-color: linear-gradient(to bottom, #eee5e6, #29190e);
+    -fx-padding: 7px;
+    -fx-cursor: hand;
+    -fx-background-radius: 50px;
+}
+
+.logout-btn:hover{
+    -fx-background-color: #29190e
+}
+
+.white-bg{
+    -fx-background-color: #fff;
+}
+
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5,0,0,0);
+}
+
+.radius{
+    -fx-background-radius: 8px;
+}
+
+.transparent{
+    -fx-background-color: transparent;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-color: linear-gradient(to bottom, #eee5e6, #29190e);
+    -fx-border-radius: 6px;
+    -fx-border-width: 1.5px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #eee5e6, #29190e);
+    -fx-background-radius: 6px 6px 0 0;
+    -fx-padding: 0 0 0 0;
+}
+
+.table-view .column-header, .filter {
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.table-view .table-cell {
+    -fx-alignment: CENTER;
+}
+
+/* style خاص بجدول الأقسام */
+#departmentTable_menuForm {
+    -fx-font-size: 30px;        /* حجم الخط */
+    /*-fx-cell-size: 160px;         ارتفاع الصف */
+}
+
+/* توسيط النص داخل الأعمدة */
+#departmentTable_menuForm .table-cell {
+    -fx-alignment: CENTER-RIGHT;
+    -fx-font-weight: bold;      /* اختياري: يخلي الخط غامق */
+}
+
+/* style خاص بجدول الأقسام */
+#menuTableView {
+    -fx-font-size: 30px;        /* حجم الخط */
+    /*-fx-cell-size: 160px;         ارتفاع الصف */
+}
+
+/* توسيط النص داخل الأعمدة */
+#menuTableView .table-cell {
+    -fx-alignment: CENTER-RIGHT;
+    -fx-font-weight: bold;      /* اختياري: يخلي الخط غامق */
+}
+
+.btn{
+    -fx-background-color: linear-gradient(to bottom, #eee5e6, #29190e);
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+}
+
+.btn:hover{
+    -fx-background-color: #523a28
+}
+
+.mini-form{
+    -fx-background-color: linear-gradient(to bottom,#c4bcc2, #29190e);
+}
+
+/* ==== شكل التاب بان نفسه ==== */
+.tab-pane {
+    -fx-tab-min-width: 100px;
+    -fx-tab-max-width: 180px;
+    -fx-tab-min-height: 20px;
+    /*    -fx-background-color: #c4bcc2;
+        -fx-border-color: #cccccc;*/
+    /*-fx-border-width: 1px;*/
+    -fx-border-radius: 5px;
+}
+
+/* ==== شكل شريط التابات ==== */
+.tab-header-area {
+    -fx-background-color: #29190e;
+}
+
+/* ==== التابات الفردية ==== */
+.tab {
+    -fx-background-color: transparent;
+    -fx-padding: 8 15 8 15;
+    -fx-border-color: transparent transparent transparent transparent;
+    -fx-border-width: 0 0 2px 0;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+/* ==== التاب النشطة ==== */
+.tab:selected {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #29190e;
+    -fx-border-width: 0 0 2px 0;
+    -fx-text-fill: #eee5e6;
+    -fx-font-weight: bold;
+}
+
+/* ==== محتوى التاب ==== */
+.tab-content-area {
+    -fx-background-color: linear-gradient(to bottom, #eee5e6, #29190e);
+    -fx-padding: 10;
+}
+
+/* ==== النص داخل التاب ==== */
+.tab-label {
+    -fx-text-fill: #29190e;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: #eee5e6; /* غيرها لأي لون تحبه */
+}
